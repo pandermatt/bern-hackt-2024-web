@@ -18,6 +18,7 @@
     border-radius: 10px;
     transition: background-color 0.3s, color 0.3s;
     margin: 5px 0;
+    gap: 10px;
 }
 
 .listen-now:hover {
@@ -26,7 +27,7 @@
 }
 
 .listen-now .text {
-    padding: 10px 20px;
+    padding: 5px 10px;
 }
 
 .listen-now img {
