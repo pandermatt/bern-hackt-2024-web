@@ -37,7 +37,7 @@ import MusicComponent from './MusicComponent.vue';
 
 <div class="home-content vp-doc first">
 
-## Team behind Wine Captain
+## Team
 
 We are thrilled to announce that Wine Captain won 3rd place 🥉 at the [BärnHäckt 2024 hackathon](https://www.bernhackt.ch/)! 🎉
 
