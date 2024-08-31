@@ -4,7 +4,7 @@ layout: home
 hero:
   name: "Wine Captain"
   text: "Your AI-powered Wine Companion 🍷"
-  tagline: "Pair the perfect wine with every meal"
+  tagline: "Never pick the wrong wine again"
   image: 
     src: /app_icon.jpg
     style: 
