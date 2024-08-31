@@ -1,11 +1,15 @@
 <template>
-    <a href="https://suno.com/song/555dfb15-6ae4-49e7-900f-e8715079ae5c" class="listen-now VPButton brand" target="_blank">
+    <a href="https://suno.com/song/555dfb15-6ae4-49e7-900f-e8715079ae5c" class="listen-now VPButton brand"
+        target="_blank">
         <img src="/img/wine-cover.jpg" alt="Wine Captain">
         <div class="text">
             <b>Wine Captain</b>
-            <p>🎶 Tune in to our Wine Captain song on Suno and let the vibes flow! 🍷</p>
+            <p class="desktop">🎶 Tune in to our Wine Captain song on Suno and let the vibes flow! 🍷</p>
+            <p class="mobile">Play now on Suno 🍷</p>
         </div>
     </a>
+
+    <p class="mobile hint"><i>🎶 Tune in to our Wine Captain song and let the vibes flow! 🍷</i></p>
 </template>
 
 <style scoped>
@@ -34,5 +38,27 @@
     width: 70px;
     margin-left: 5px;
     border-radius: 10px;
+}
+
+.mobile {
+    display: none;
+}
+
+.desktop {
+    display: block;
+}
+
+.hint {
+    margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+    .mobile {
+        display: block;
+    }
+
+    .desktop {
+        display: none;
+    }
 }
 </style>
