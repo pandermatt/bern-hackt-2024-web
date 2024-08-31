@@ -4,6 +4,7 @@ import { defineConfig } from 'vitepress'
 export default defineConfig({
   title: "Wine Captain",
   description: "Your AI-powered Wine Companion 🍷",
+  base: '/wine-captain/',
 
   head: [
     ['meta', { property: 'og:title', content: 'Wine Captain' }],
