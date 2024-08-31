@@ -8,7 +8,7 @@ hero:
   image: 
     src: /app_icon.jpg
     style: 
-      border-radius: 50%
+      border-radius: 20%
     alt: Pascal
   actions:
     - theme: brand
