@@ -7,9 +7,7 @@ hero:
   tagline: "Never pick the wrong wine again"
   image: 
     src: /app_icon.jpg
-    style: 
-      border-radius: 20%
-    alt: Pascal
+    alt: "Wine Captain Logo"
   actions:
     - theme: brand
       text: "Try Wine Captain Now"
