@@ -9,7 +9,7 @@
         </div>
     </a>
 
-    <p class="mobile hint"><i>🎶 Tune in to our Wine Captain song and let the vibes flow! 🍷</i></p>
+    <p class="mobile hint"><i>Tune in to our Wine Captain song and let the vibes flow! 🎶</i></p>
 </template>
 
 <style scoped>
