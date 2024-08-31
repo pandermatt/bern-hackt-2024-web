@@ -1,0 +1,182 @@
+/**
+ * Customize default theme styling by overriding CSS variables:
+ * https://github.com/vuejs/vitepress/blob/main/src/client/theme-default/styles/vars.css
+ */
+
+/**
+ * Colors
+ *
+ * Each colors have exact same color scale system with 3 levels of solid
+ * colors with different brightness, and 1 soft color.
+ * 
+ * - `XXX-1`: The most solid color used mainly for colored text. It must
+ *   satisfy the contrast ratio against when used on top of `XXX-soft`.
+ *
+ * - `XXX-2`: The color used mainly for hover state of the button.
+ *
+ * - `XXX-3`: The color for solid background, such as bg color of the button.
+ *   It must satisfy the contrast ratio with pure white (#ffffff) text on
+ *   top of it.
+ *
+ * - `XXX-soft`: The color used for subtle background such as custom container
+ *   or badges. It must satisfy the contrast ratio when putting `XXX-1` colors
+ *   on top of it.
+ *
+ *   The soft color must be semi transparent alpha channel. This is crucial
+ *   because it allows adding multiple "soft" colors on top of each other
+ *   to create a accent, such as when having inline code block inside
+ *   custom containers.
+ *
+ * - `default`: The color used purely for subtle indication without any
+ *   special meanings attched to it such as bg color for menu hover state.
+ *
+ * - `brand`: Used for primary brand colors, such as link text, button with
+ *   brand theme, etc.
+ *
+ * - `tip`: Used to indicate useful information. The default theme uses the
+ *   brand color for this by default.
+ *
+ * - `warning`: Used to indicate warning to the users. Used in custom
+ *   container, badges, etc.
+ *
+ * - `danger`: Used to show error, or dangerous message to the users. Used
+ *   in custom container, badges, etc.
+ * -------------------------------------------------------------------------- */
+
+:root {
+  /* Light Mode */
+  --text: oklab(18.06% 0.020 0.01);
+  --background: oklab(98.44% 0.003 0.00);
+  --footer: #F2EDED;
+  --primary: oklab(55.97% 0.112 0.04);
+  --secondary: oklab(0.00% 0.000 0.00);
+  --accent: oklab(63.66% 0.107 0.04);
+
+  --vp-c-default-1: var(--text);
+  --vp-c-default-2: oklab(28% 0.015 0.01);
+  --vp-c-default-3: oklab(38% 0.010 0.00);
+  --vp-c-default-soft: oklab(88% 0.005 0.002);
+
+  --vp-c-brand-1: var(--primary);
+  --vp-c-brand-2: oklab(50% 0.110 0.035);
+  --vp-c-brand-3: oklab(45% 0.105 0.030);
+  --vp-c-brand-soft: oklab(75% 0.100 0.035);
+
+  --vp-c-tip-1: var(--accent);
+  --vp-c-tip-2: oklab(60% 0.105 0.04);
+  --vp-c-tip-3: oklab(55% 0.100 0.03);
+  --vp-c-tip-soft: oklab(70% 0.102 0.035);
+
+  --vp-c-warning-1: oklab(50% 0.200 0.03);
+  --vp-c-warning-2: oklab(45% 0.180 0.025);
+  --vp-c-warning-3: oklab(40% 0.160 0.02);
+  --vp-c-warning-soft: oklab(75% 0.220 0.03);
+
+  --vp-c-danger-1: oklab(50% 0.230 0.02);
+  --vp-c-danger-2: oklab(45% 0.210 0.015);
+  --vp-c-danger-3: oklab(40% 0.190 0.01);
+  --vp-c-danger-soft: oklab(75% 0.250 0.02);
+}
+
+.dark {
+  --text: oklab(18.06% 0.020 0.01);
+  --background: oklab(98.44% 0.003 0.00);
+  --footer: #F2EDED;
+  --primary: oklab(55.97% 0.112 0.04);
+  --secondary: oklab(0.00% 0.000 0.00);
+  --accent: oklab(63.66% 0.107 0.04);
+  /* Dark Mode */
+  --text: oklab(90% 0.005 0.002);
+  --background: oklab(15% 0.002 0.001);
+  --footer: #1a1a1a;
+  --primary: oklab(70% 0.100 0.03);
+  --secondary: oklab(5% 0.001 0.001);
+  --accent: oklab(75% 0.102 0.035);
+
+  --vp-c-default-1: var(--text);
+  --vp-c-default-2: oklab(80% 0.005 0.002);
+  --vp-c-default-3: oklab(70% 0.004 0.002);
+  --vp-c-default-soft: oklab(35% 0.010 0.005);
+
+  --vp-c-brand-1: var(--primary);
+  --vp-c-brand-2: oklab(65% 0.090 0.025);
+  --vp-c-brand-3: oklab(60% 0.085 0.020);
+  --vp-c-brand-soft: oklab(45% 0.080 0.025);
+
+  --vp-c-tip-1: var(--accent);
+  --vp-c-tip-2: oklab(70% 0.100 0.03);
+  --vp-c-tip-3: oklab(65% 0.090 0.025);
+  --vp-c-tip-soft: oklab(50% 0.085 0.02);
+
+  --vp-c-warning-1: oklab(80% 0.150 0.02);
+  --vp-c-warning-2: oklab(75% 0.140 0.015);
+  --vp-c-warning-3: oklab(70% 0.130 0.01);
+  --vp-c-warning-soft: oklab(50% 0.160 0.02);
+
+  --vp-c-danger-1: oklab(75% 0.180 0.015);
+  --vp-c-danger-2: oklab(70% 0.170 0.01);
+  --vp-c-danger-3: oklab(65% 0.160 0.005);
+  --vp-c-danger-soft: oklab(50% 0.200 0.01);
+}
+
+/**
+ * Component: Button
+ * -------------------------------------------------------------------------- */
+
+:root {
+  --vp-button-brand-border: transparent;
+  --vp-button-brand-text: var(--vp-c-white);
+  --vp-button-brand-bg: var(--vp-c-brand-3);
+  --vp-button-brand-hover-border: transparent;
+  --vp-button-brand-hover-text: var(--vp-c-white);
+  --vp-button-brand-hover-bg: var(--vp-c-brand-2);
+  --vp-button-brand-active-border: transparent;
+  --vp-button-brand-active-text: var(--vp-c-white);
+  --vp-button-brand-active-bg: var(--vp-c-brand-1);
+}
+
+/**
+ * Component: Home
+ * -------------------------------------------------------------------------- */
+
+:root {
+  /* Light Mode */
+  --vp-home-hero-name-color: transparent;
+  --vp-home-hero-name-background: -webkit-linear-gradient(120deg,
+      var(--primary) 30%,
+      var(--accent));
+
+  --vp-home-hero-image-filter: blur(44px);
+}
+
+
+@media (min-width: 640px) {
+  :root {
+    --vp-home-hero-image-filter: blur(56px);
+  }
+}
+
+@media (min-width: 960px) {
+  :root {
+    --vp-home-hero-image-filter: blur(68px);
+  }
+}
+
+/**
+ * Component: Custom Block
+ * -------------------------------------------------------------------------- */
+
+:root {
+  --vp-custom-block-tip-border: transparent;
+  --vp-custom-block-tip-text: var(--vp-c-text-1);
+  --vp-custom-block-tip-bg: var(--vp-c-brand-soft);
+  --vp-custom-block-tip-code-bg: var(--vp-c-brand-soft);
+}
+
+/**
+ * Component: Algolia
+ * -------------------------------------------------------------------------- */
+
+.DocSearch {
+  --docsearch-primary-color: var(--vp-c-brand-1) !important;
+}
