@@ -9,10 +9,7 @@ export default defineConfig({
   head: [
     ['meta', { property: 'og:title', content: 'Wine Captain' }],
     ['meta', { property: 'og:description', content: 'Your AI-powered Wine Companion 🍷' }],
-    ['meta', { property: 'og:image', content: 'https://pandermatt.ch/wine-captain/og-image.png' }],
-    ['link', { rel: 'icon', type: 'image/png', sizes: '16x16', href: '/wine-captain/favicon-16x16.png' }],
-    ['link', { rel: 'icon', type: 'image/png', sizes: '32x32', href: '/wine-captain/favicon-32x32.png' }],
-    ['link', { rel: 'shortcut icon', href: '/wine-captain/favicon.ico' }]
+    ['meta', { property: 'og:image', content: 'https://pandermatt.ch/wine-captain/og-image.png' }]
   ],
 
   themeConfig: {
