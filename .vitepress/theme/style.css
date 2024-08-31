@@ -133,6 +133,16 @@
   --vp-button-brand-active-border: transparent;
   --vp-button-brand-active-text: var(--vp-c-white);
   --vp-button-brand-active-bg: var(--vp-c-brand-1);
+
+  --vp-button-alt-border: var(--primary)
+  --vp-button-alt-text: var(--vp-c-brand-1);
+  --vp-button-alt-bg: var(--background);
+  --vp-button-alt-hover-border: transparent;
+  --vp-button-alt-hover-text: var(--vp-c-brand-1);
+  --vp-button-alt-hover-bg: var(--vp-c-default-soft);
+  --vp-button-alt-active-border: transparent;
+  --vp-button-alt-active-text: var(--vp-c-brand-1);
+  --vp-button-alt-active-bg: var(--vp-c-default-soft);
 }
 
 /**

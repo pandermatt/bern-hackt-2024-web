@@ -15,6 +15,10 @@ hero:
       text: "Try Wine Captain Now"
       link: https://wine-captain.ch
 
+    - theme: alt
+      text: "BärnHäckt 2024"
+      link: https://www.bernhackt.ch/
+
 features:
   - title: 🔍 AI-Powered Recommendations
     details: Upload a photo of your meal, and let our multimodal AI suggest the perfect wine from our extensive dataset.
